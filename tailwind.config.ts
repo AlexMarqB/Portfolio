@@ -8,11 +8,25 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+      gridTemplateColumns: {
+        pj: 'minmax(20%, 60%) 1fr',
+        label: "minmax(5rem, 10rem) minmax(20rem, 40rem)"
       },
+      colors: {
+        red: {
+          10: ' #f50400ff',
+          50: '#b80c09ff'
+        },
+        gray: {
+          10: '#e6efeaff',
+          50: '#b5bab5ff',
+          100: '#202021'
+        },
+        bg: {
+          100: '#39393aff',
+          500: '#2e2c2c'
+        }
+      }
     },
   },
   plugins: [],
