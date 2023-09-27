@@ -42,7 +42,10 @@ export default function Experience() {
 
 	return (
 		<>
+			<div className="flex flex-col">
 			<SectionTitle>Experiencias de trabalho</SectionTitle>
+			<h2 className="text-red-50 text-base md:text-lg lg:text-xl xl:text-2xl font-semibold ml-8">{'('}Clique nos cards para ver a descrição{')'}</h2>
+			</div>
 			<div id="Xp" className="grid grid-cols-1 md:grid-cols-2 gap-4 px-3 py-8">
 				{Xps.map((item, index) => (
 					<div key={index} className="w-full flex flex-col">
