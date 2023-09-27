@@ -54,7 +54,7 @@ export default function Projects() {
 						</div>
 					))
 				) : (
-					<div className="flex flex-col w-full justify-center items-center gap-4">
+					<div className="flex flex-col w-full min-h-screen justify-center items-center gap-4">
 						<h1 className="text-xl md:text-2xl xl:text-3xl text-red-10 font-bold">Aindá não há projetos concluidos futuramente será atualizado!</h1>
 						<a href="/" className="text-lg md:text-xl xl:text-2xl text-red-50 hover:underline">{`<= `}Voltar para a página principal!</a>
 					</div>
