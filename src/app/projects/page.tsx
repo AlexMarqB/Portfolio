@@ -1,4 +1,4 @@
-import { Divider, SectionTitle } from "@/components/@useful";
+import { SectionTitle } from "@/components/@useful";
 
 interface projectData {
 	pic: string;

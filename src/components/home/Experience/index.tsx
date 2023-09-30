@@ -42,11 +42,11 @@ export default function Experience() {
 
 	return (
 		<>
-			<div className="flex flex-col">
+			<div id="Xp" className="flex flex-col">
 			<SectionTitle>Experiencias de trabalho</SectionTitle>
 			<h2 className="text-red-50 text-base md:text-lg lg:text-xl xl:text-2xl font-semibold ml-8">{'('}Clique nos cards para ver a descrição{')'}</h2>
 			</div>
-			<div id="Xp" className="grid grid-cols-1 md:grid-cols-2 gap-4 px-3 py-8">
+			<div className="grid grid-cols-1 md:grid-cols-2 gap-4 px-3 py-8">
 				{Xps.map((item, index) => (
 					<div key={index} className="w-full flex flex-col">
                         {/* Botão para descrição --> */}
@@ -74,7 +74,7 @@ export default function Experience() {
 					<button
 						type="button"
 						onClick={() => setInfo(false)}
-						className="fixed inset-0 z-40 min-h-screen min-w-full backdrop-blur-md"
+						className="fixed inset-0 z-40 min-h-screen min-w-full backdrop-blur-md cursor-default"
 					/>
 					<div className="fixed flex flex-col max-w-6xl gap-3 z-50 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full rounded-lg border-2 border-red-50 p-4 bg-gray-100">
 						<h1 className="text-red-10 text-2xl md:text-3xl 2xl:text-7xl font-semibold">

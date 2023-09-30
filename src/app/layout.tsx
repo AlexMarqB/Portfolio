@@ -20,8 +20,8 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="pt-br">
-      <body className={rajdhani.className}>
+    <html lang="pt-br" >
+      <body className={`${rajdhani.className}`}>
         <div className='flex flex-col min-w-screen min-h-full justify-center'>
           <Header />
           <main className='bg-[#39393aff]'>

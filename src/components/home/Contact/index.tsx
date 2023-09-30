@@ -83,7 +83,7 @@ export default function Contact() {
 					className="flex flex-col gap-4 mt-10 justify-center px-5 h-full w-full tracking-wider"
 				>
 					<div className="flex flex-col gap-2 w-full items-center justify-center">
-						<div className="w-10/12">
+						<div className="w-8/12">
 							<label htmlFor="name" className="text-red-10 text-xl font-semibold md:text-3xl">Nome:</label>
 						<Input
 							placeholder="Exemplo de Nome"
@@ -94,7 +94,7 @@ export default function Contact() {
 							onChange={(e) => setName(e.target.value)}
 						/>
 						</div>
-						<div className="w-10/12">
+						<div className="w-8/12">
 						<label htmlFor="email" className="text-red-10 text-xl font-semibold md:text-3xl">Email:</label>
 						<Input
 							placeholder="exemplo@email.com"

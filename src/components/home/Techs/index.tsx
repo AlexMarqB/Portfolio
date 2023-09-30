@@ -44,13 +44,13 @@ export default function Techs() {
     ]
 
     return (
-        <>
+        <div id="Techs" className="h-fit py-10">
         <SectionTitle>Tecnologias conhecidas</SectionTitle>
-        <div id="Techs" className="grid grid-cols-2 ml-6 gap-6 py-10 tracking-wider">
+        <div className="grid grid-cols-2 ml-6 gap-6 lg:gap-12 tracking-wider">
             {techs.map((item, index) => (
                 <ProgressBar label={item.name} value={item.progress} key={index} />
             ))}
         </div>
-        </>
+        </div>
     )
 }
