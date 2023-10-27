@@ -11,6 +11,7 @@ export default function Footer() {
 				<Linkedin className="2xl:h-8 2xl:w-8"/>
 				<a
 					href="https://www.linkedin.com/in/alex-marques-87050726a/"
+					target="_blank"
 					className="hover:text-red-50"
 				>
 					Linkedin

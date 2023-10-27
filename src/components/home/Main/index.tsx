@@ -2,6 +2,7 @@
 import { useState } from 'react'
 import { MainButtons, Spinner } from "@/components/@useful";
 import { ChevronLeft, ChevronRight, Terminal } from "lucide-react";
+import { useRouter } from 'next/navigation';
 
 interface ActionButtons {
     link: string;
@@ -19,6 +20,8 @@ export default function Main() {
 		  });
 		}
 	}
+    
+    const router = useRouter()
 
     const [loading, setLoading] = useState(false)
 
@@ -58,6 +61,10 @@ export default function Main() {
                         <MainButtons key={index} onClick={(e) => {
                             if(item.link === "projects") {
                                 setLoading(true)
+                                router.push(`${item.link}`)
+                                setTimeout(() => {
+                                    setLoading(false)
+                                }, 1500)
                             }
                             scrollToAnchor(e, `${item.link}`)
                             setTimeout(() => {

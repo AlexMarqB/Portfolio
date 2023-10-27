@@ -1,4 +1,5 @@
 "use client";
+import { Github } from "lucide-react";
 import { Hstack, Paragraph, Title, VStack } from "./stacks";
 
 interface TopicsProps {
@@ -54,6 +55,10 @@ export default function About() {
 						<h2 className="text-gray-50 text-xl md:text-3xl  2xl:text-5xl">
 							Olá sou o Alex e vou falar um pouco sobre mim!
 						</h2>
+						<a href="https://github.com/AlexMarqB" target="_blank" className="text-gray-10 hover:text-red-10 w-fit">
+							<Github className="text-gray-10 w-7 h-7 md:w-10 md:h-10 hover:text-red-10" />
+							Github
+						</a>
 					</VStack>
 					<img src="/banner_c.svg" alt="imagem" className="w-2/6" />
 				</Hstack>
